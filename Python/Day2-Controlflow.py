@@ -1,4 +1,11 @@
 '''
+SyntaxError: Error caused by not following the proper structure (syntax) of the language.
+NameError: Errors reported when the interpreter detects a variable that is unknown.
+TypeError: Errors thrown when an operation is applied to an object of an inappropriate type.
+
+'''
+
+'''
 To express conditional logic in Python, you use if statements. When you're writing an if statement, you're relying on another concept we cover in this module, mathematical operators. Python supports the common logic operators from math: equals, not equals, less than, less than or equal to, greater than, and greater than or equal to. You're probably used to seeing these operators displayed using symbols, which is how they’re represented in Python, too.
 
 Equals: a == b
@@ -39,6 +46,8 @@ if credits >= 120:
 # Boolean Operators: and 
 
 '''
+None and 0 are interpreted as false in Python.
+
 Often, the conditions you want to check in your conditional statement will require more than one boolean expression to cover. In these cases, you can build larger boolean expressions using boolean operators. These operators (also known as logical operators) combine smaller boolean expressions into larger boolean expressions.
 
 There are three boolean operators are:
@@ -80,3 +89,11 @@ if not credits >= 120:
   print("You do not have enough credits to graduate.")
 if not gpa>=2.0 and not credits >= 120:
   print("You do not meet either requirement to graduate!")
+
+object_size = 10
+proximity = 9000
+
+if object_size > 5 and proximity < 1000:
+    print('Evasive maneuvers required')
+else:
+    print('Object poses no threat')
